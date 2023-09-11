@@ -14,7 +14,8 @@ namespace PolyRunner.Weapon
         private void Start()
         {
             Rigidbody rigidbody = GetComponent<Rigidbody>();
-            rigidbody.AddForce(Vector3.forward * 500);
+            Vector3 force = Vector3.forward * 500;
+            rigidbody.AddForce(force);
 
             StartCoroutine(StoreDelay());
         }
@@ -24,8 +25,9 @@ namespace PolyRunner.Weapon
             if (collision.gameObject.TryGetComponent(out EnemyBase enemyBase))
             {
                 StopAllCoroutines();
-                float damage = PlayerStats.Instance.PlayerStatsData.WeaponDamage + weaponData.damage;
+                float damage = PlayerStats.Instance.PlayerStatsData.WeaponDamage;
                 enemyBase.ApplyDamage(damage);
+                PlayerStats.Instance.ApplyHeal(damage);
 
                 ProjectilePool.Instance.StoreProjectile(gameObject);
                 return;
