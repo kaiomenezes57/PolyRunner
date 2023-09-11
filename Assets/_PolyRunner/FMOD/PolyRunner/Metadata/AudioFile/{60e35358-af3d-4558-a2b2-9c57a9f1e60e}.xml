@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{60e35358-af3d-4558-a2b2-9c57a9f1e60e}">
+		<property name="assetPath">
+			<value>onlymp3.to - Meno Felps Caio Shock Libido Official Music Video tiktok newjazz trap-_RPhW8GyueI-192k-1694474636.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>154.77600000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9b6a83df-f169-4bff-8116-cf8acafc1e26}</destination>
+		</relationship>
+	</object>
+</objects>

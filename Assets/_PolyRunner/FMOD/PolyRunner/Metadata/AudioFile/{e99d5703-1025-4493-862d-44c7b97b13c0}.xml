@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e99d5703-1025-4493-862d-44c7b97b13c0}">
+		<property name="assetPath">
+			<value>onlymp3.to - Vk Mac PRAGA DA VEZ Prod. Ursão Videoclipe Oficial -hVkTYD7MpfA-192k-1694474514.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>236.01599999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9b6a83df-f169-4bff-8116-cf8acafc1e26}</destination>
+		</relationship>
+	</object>
+</objects>

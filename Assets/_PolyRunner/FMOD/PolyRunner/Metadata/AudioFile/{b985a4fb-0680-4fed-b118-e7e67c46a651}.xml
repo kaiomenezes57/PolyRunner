@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b985a4fb-0680-4fed-b118-e7e67c46a651}">
+		<property name="assetPath">
+			<value>onlymp3.to - DEREK feat. ABBOT Scooby Doo Official Music Video -6lzPkKzLzw8-192k-1694473696.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>247.72800000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9b6a83df-f169-4bff-8116-cf8acafc1e26}</destination>
+		</relationship>
+	</object>
+</objects>

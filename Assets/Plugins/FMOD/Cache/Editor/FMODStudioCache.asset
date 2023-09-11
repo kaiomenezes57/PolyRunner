@@ -1,5 +1,200 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7639338052609880876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PowerUp
+  m_EditorClassIdentifier: 
+  Path: event:/PowerUp
+  Guid:
+    Data1: -1388174111
+    Data2: 1247742240
+    Data3: 814448028
+    Data4: -1230806092
+  Banks:
+  - {fileID: -3897966599719423681}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1002
+--- !u!114 &-5783309000452814481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638300614161264571
+  FileSizes:
+  - Name: Desktop
+    Value: 1124
+  Exists: 1
+--- !u!114 &-4159234806649831200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/AmbientMusic02
+  m_EditorClassIdentifier: 
+  Path: event:/Music/AmbientMusic02
+  Guid:
+    Data1: 151860991
+    Data2: 1258574642
+    Data3: -752018555
+    Data4: -1664821632
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 123952
+--- !u!114 &-4028810185976167686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/AmbientMusic01
+  m_EditorClassIdentifier: 
+  Path: event:/Music/AmbientMusic01
+  Guid:
+    Data1: 654828908
+    Data2: 1132389158
+    Data3: -202513734
+    Data4: -1773257508
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 195000
+--- !u!114 &-3897966599719423681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/PowerUp.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/PowerUp.bank
+  Name: PowerUp
+  StudioPath: bank:/PowerUp
+  lastModified: 638300614187409131
+  FileSizes:
+  - Name: Desktop
+    Value: 11968
+  Exists: 1
+--- !u!114 &-3524921112356252749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/AmbientMusic05
+  m_EditorClassIdentifier: 
+  Path: event:/Music/AmbientMusic05
+  Guid:
+    Data1: 155345927
+    Data2: 1129643757
+    Data3: -1540713039
+    Data4: 1611587525
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 234776
+--- !u!114 &-2858951681306606162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638300614187224096
+  FileSizes:
+  - Name: Desktop
+    Value: 15430496
+  Exists: 1
+--- !u!114 &-885575679672527330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/AmbientMusic06
+  m_EditorClassIdentifier: 
+  Path: event:/Music/AmbientMusic06
+  Guid:
+    Data1: -1923134881
+    Data2: 1213115505
+    Data3: 48464061
+    Data4: -1272386548
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 120466
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +207,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: -5783309000452814481}
+  - {fileID: 130945267073126681}
+  - {fileID: -2858951681306606162}
+  - {fileID: -3897966599719423681}
+  EditorEvents:
+  - {fileID: -4028810185976167686}
+  - {fileID: -7639338052609880876}
+  - {fileID: -4159234806649831200}
+  - {fileID: 285651794111284327}
+  - {fileID: 4011093438348934354}
+  - {fileID: -3524921112356252749}
+  - {fileID: -885575679672527330}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  MasterBanks:
+  - {fileID: 130945267073126681}
+  StringsBanks:
+  - {fileID: -5783309000452814481}
+  cacheTime: 638300614187409131
   cacheVersion: 131605
+--- !u!114 &130945267073126681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638300614161244571
+  FileSizes:
+  - Name: Desktop
+    Value: 1194
+  Exists: 1
+--- !u!114 &285651794111284327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/AmbientMusic03
+  m_EditorClassIdentifier: 
+  Path: event:/Music/AmbientMusic03
+  Guid:
+    Data1: 1948031388
+    Data2: 1204600708
+    Data3: 1862172089
+    Data4: -2055675084
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 185000
+--- !u!114 &4011093438348934354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/AmbientMusic04
+  m_EditorClassIdentifier: 
+  Path: event:/Music/AmbientMusic04
+  Guid:
+    Data1: -1947600126
+    Data2: 1162728181
+    Data3: -1655279189
+    Data4: -1516241049
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 140776
