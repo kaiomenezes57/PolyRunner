@@ -9,11 +9,14 @@ namespace PolyRunner
 
         private void Start()
         {
+#if UNITY_EDITOR
             if (_debugIndex > -1)
             {
                 FMODUnity.RuntimeManager.PlayOneShot(_musics[_debugIndex]);
                 return;
             }
+#endif
+
             FMODUnity.EventReference music = _musics[Random.Range(0, _musics.Length)];
             FMODUnity.RuntimeManager.PlayOneShot(music);
         }
