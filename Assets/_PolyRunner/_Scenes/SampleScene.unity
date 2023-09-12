@@ -152,10 +152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0267b45c9c48be443b81835d285c23a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _runBlockPrefab: {fileID: 5355174894415773848, guid: f65a1d10233b20d4690a3956289bdbf8,
-    type: 3}
+  _runBlockPrefabs:
+  - {fileID: 5355174894415773848, guid: f65a1d10233b20d4690a3956289bdbf8, type: 3}
+  - {fileID: 333898701126910728, guid: 0e178224b8ac5b344b7bd1b8d8a87fe4, type: 3}
+  - {fileID: 7087310162659580669, guid: f19b90aa019b7944d9a160cfa80f27f7, type: 3}
   _parentTransform: {fileID: 947828781}
-  _amount: 100
+  _amount: 60
 --- !u!4 &17701626
 Transform:
   m_ObjectHideFlags: 0
@@ -337,7 +339,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 127
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0

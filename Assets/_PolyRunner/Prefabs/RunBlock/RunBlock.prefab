@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1093881946761143621}
   - component: {fileID: 9091701138262382077}
   - component: {fileID: 1191922811577193250}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnPoint (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047598848785648719}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -197,7 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1308744775805849655}
-  - component: {fileID: 5286409333505170112}
+  - component: {fileID: 3113577055382402000}
   m_Layer: 0
   m_Name: SpawnPoints
   m_TagString: Untagged
@@ -226,7 +226,7 @@ Transform:
   m_Father: {fileID: 716340974933340286}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5286409333505170112
+--- !u!114 &3113577055382402000
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -235,11 +235,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3165607219814523271}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2aa72e5b13875e48b95dbfc5767bcd8, type: 3}
+  m_Script: {fileID: 11500000, guid: c99a62924b019f9499846fd6d22f4b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _enemiesPrefab:
   - {fileID: -4245454164272658037, guid: 8d87ca32bf068b6459abe23e0e139460, type: 3}
+  - {fileID: 1512749822542746068, guid: 7f6c545529fe4034584b9afabf037fc5, type: 3}
 --- !u!1 &5355174894415773848
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +376,7 @@ GameObject:
   - component: {fileID: 1992285530906158310}
   - component: {fileID: 9190099550144548654}
   - component: {fileID: 3166950845730552911}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnPoint (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +413,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6612568074971038637}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -458,7 +459,7 @@ GameObject:
   - component: {fileID: 3291991736210252640}
   - component: {fileID: 8756807176759899263}
   - component: {fileID: 48141633230087577}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnPoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -495,7 +496,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6903973934553328913}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -541,7 +542,7 @@ GameObject:
   - component: {fileID: 3270491096824039089}
   - component: {fileID: 5189669935192765803}
   - component: {fileID: 7571792496057309557}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnPoint (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +579,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7705706334259323904}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -729,7 +730,7 @@ GameObject:
   - component: {fileID: 8519945309065941066}
   - component: {fileID: 2297391914577713888}
   - component: {fileID: 2560038739977757265}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnPoint (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -766,7 +767,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8380042344354385652}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -812,7 +813,7 @@ GameObject:
   - component: {fileID: 5088400459870106228}
   - component: {fileID: 2778444871303296155}
   - component: {fileID: 1564373776421448505}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -849,7 +850,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9199895953376076499}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
