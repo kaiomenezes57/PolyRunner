@@ -29,7 +29,7 @@ namespace PolyRunner.Core
             GameObject projectile = _projectiles[_index++];
             projectile.transform.SetParent(null);
 
-            if (_index > _projectiles.Count) { _index = 0; }
+            if (_index > _projectiles.Count - 1) { _index = 0; }
             return projectile;
         }
 

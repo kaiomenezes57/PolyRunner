@@ -9,6 +9,7 @@ namespace PolyRunner.Enemy
 
         protected virtual void Start()
         {
+            if (_enemiesPrefab.Count == 0) { return; }
             SpawnEnemy();
         }
 

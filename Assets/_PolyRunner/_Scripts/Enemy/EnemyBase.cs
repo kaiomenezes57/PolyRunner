@@ -2,13 +2,17 @@ using UnityEngine;
 using PolyRunner.Core;
 using PolyRunner.Player;
 using PolyRunner.HUD;
+using System;
+using PolyRunner.PowerUp;
 
 namespace PolyRunner.Enemy
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class EnemyBase : CollisionInteraction, IDamageable
+    public abstract class EnemyBase : CollisionInteraction, IDamageable
     {
         [SerializeField] protected EnemyStats _enemyStats;
+        [SerializeField] protected PowerUpData _dropPowerUp;
+        
         private DamageText _damageText;
         protected PlayerController _playerController;
 
@@ -46,7 +50,22 @@ namespace PolyRunner.Enemy
         {
             if (_enemyStats.Health > 0) { return; }
             CoinManager.Instance.AddCoin(_enemyStats.DropCoinAmount);
+            
+            DropItem();
             Destroy(gameObject);
+        }
+
+        public void SumToEnemyStatsData(EnemyStats enemyStats)
+        {
+            _enemyStats.Health += enemyStats.Health;
+        }
+
+        private void DropItem()
+        {
+            GameObject prefab = (GameObject)Resources.Load("PowerUpBoxDrop");
+            GameObject powerUp = Instantiate(prefab, transform.parent.transform);
+
+            powerUp.transform.position = transform.position;
         }
     }
 

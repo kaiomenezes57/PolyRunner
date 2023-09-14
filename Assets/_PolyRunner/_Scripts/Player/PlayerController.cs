@@ -13,6 +13,7 @@ namespace PolyRunner
 
         private void Update()
         {
+            if (Time.deltaTime == 0) { return; }
             Vector2 value = new(PlayerInputs.Actions.Player.Horizontal.ReadValue<float>(), 0f);
             _characterController.Move(value / 30f);
         }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7847014490335028680}
   - component: {fileID: 7331711650840931772}
   m_Layer: 3
-  m_Name: PowerUpBox
+  m_Name: PowerUpBoxDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e7bd4b36d6d817140b533ca5f2c80dcf, type: 2}
+  - {fileID: 2100000, guid: 764f460436d97d446b6d34f6de698f5b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -148,16 +148,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _powerUpDataList:
-  - {fileID: 11400000, guid: 57e165441c05d19409835e8d0d655fd3, type: 2}
-  - {fileID: 11400000, guid: b7bf35e7838c5e6479d70587e8f0f149, type: 2}
-  - {fileID: 11400000, guid: f614f243f80e22946936f95d5defd71e, type: 2}
-  - {fileID: 11400000, guid: 46a1bacde1f1d7540b6ab5c13b018242, type: 2}
-  - {fileID: 11400000, guid: 1ac39dc67d2a21145a162a4dd0df03c0, type: 2}
-  - {fileID: 11400000, guid: b040560ba5394ae4c8c867be21923a63, type: 2}
-  - {fileID: 11400000, guid: 4e24c6b5fe08b8744a97fe76116bbbf4, type: 2}
-  - {fileID: 11400000, guid: 20ac94a8360bb154190c1fef34ab9198, type: 2}
-  - {fileID: 11400000, guid: d39261ebbb5838e408f196abb840dea6, type: 2}
-  - {fileID: 11400000, guid: cda5c6435f2d6e3479872b0c019074fc, type: 2}
+  - {fileID: 11400000, guid: e9b843cf241c9f04ea32057b281d1dad, type: 2}
+  - {fileID: 11400000, guid: bd762a30d4f5bc842b44843d3978d84a, type: 2}
+  - {fileID: 11400000, guid: 40008167e62104346954d45f2e06b4bc, type: 2}
+  - {fileID: 11400000, guid: 6d0a014dfce9b294fb419e3c93b6beae, type: 2}
   _powerUpLabel: {fileID: 1304823115534669409}
 --- !u!1 &5962005754225151667
 GameObject:
@@ -337,8 +331,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278246911
+  m_fontColor: {r: 1, g: 0.868332, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

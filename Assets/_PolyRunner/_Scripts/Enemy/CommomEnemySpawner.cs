@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using PolyRunner.Core;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace PolyRunner.Enemy
@@ -6,19 +7,18 @@ namespace PolyRunner.Enemy
     public class CommomEnemySpawner : EnemySpawner
     {
         private readonly List<Transform> _spawnPoints = new();
-        private int _amount;
 
         protected override void Start()
         {
-            _amount = Random.Range(1, 3);
-            
             FindAllSpawnPoints();
             base.Start();
         }
 
         protected override void SpawnEnemy()
         {
-            for (int i = 0; i < _amount; i++)
+            if (_spawnPoints.Count == 0 || _enemiesPrefab.Count == 0) { return; }
+
+            for (int i = 0; i < Random.Range(1, 3); i++)
             {
                 int spawnPointRandomIndex = Random.Range(0, _spawnPoints.Count);
                 int enemyRandomIndex = Random.Range(0, _enemiesPrefab.Count);
@@ -26,9 +26,12 @@ namespace PolyRunner.Enemy
                 Transform spawnPoint = _spawnPoints[spawnPointRandomIndex];
                 EnemyBase enemyPrefab = _enemiesPrefab[enemyRandomIndex];
 
-                GameObject enemy = Instantiate(enemyPrefab).gameObject;
+                EnemyBase enemy = Instantiate(enemyPrefab);
                 enemy.transform.position = spawnPoint.position;
                 enemy.transform.SetParent(spawnPoint);
+
+                EnemyStats enemyStats = GetComponentInParent<RunBlock>().enemyStats;
+                enemy.SumToEnemyStatsData(enemyStats);
 
                 _spawnPoints.Remove(spawnPoint);
             }

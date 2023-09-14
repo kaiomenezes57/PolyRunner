@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace PolyRunner.Core
@@ -11,8 +12,11 @@ namespace PolyRunner.Core
 
         public event Action<double> OnCoinUpdate;
 
-        private void Start()
+        private async void Start()
         {
+            await Task.Delay(100);
+            _coinAmount = LoadCurrentCoinAmount();
+
             StartCoroutine(CoinEarnLoop());
             OnCoinUpdate?.Invoke(_coinAmount);
         }
@@ -32,6 +36,7 @@ namespace PolyRunner.Core
             OnCoinUpdate?.Invoke(_coinAmount);
 
             FMODUnity.RuntimeManager.PlayOneShot("event:/CoinEarn");
+            SaveCurrentCoinAmount();
         }
 
         public void RemoveCoin(double amount)
@@ -39,6 +44,17 @@ namespace PolyRunner.Core
             _coinAmount -= amount;
             if (_coinAmount <= 0) { _coinAmount = 0; }
             OnCoinUpdate?.Invoke(_coinAmount);
+            SaveCurrentCoinAmount();
+        }
+
+        private void SaveCurrentCoinAmount()
+        {
+            PlayerPrefs.SetFloat("coin", (float)_coinAmount);
+        }
+
+        private float LoadCurrentCoinAmount()
+        {
+            return PlayerPrefs.GetFloat("coin");
         }
     }
 }

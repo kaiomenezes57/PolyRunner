@@ -12,6 +12,8 @@ namespace PolyRunner.Core
         private bool _isWeaponSelectorGenerated = true;
         private int _runCount = 1;
 
+        private int _bossesCount;
+
         private void Start()
         {
             Create();
@@ -29,11 +31,19 @@ namespace PolyRunner.Core
                 runBlock.GetComponentInChildren<WeaponSelectorTrigger>(true).gameObject.SetActive(_isWeaponSelectorGenerated);
                 _isWeaponSelectorGenerated = false;
 
+                RunStatsHandler(runBlock.GetComponent<RunBlock>());
+
                 runBlock.transform.position = new(0f, 0f, z);
                 runBlock.transform.SetParent(_parentTransform);
 
                 z += 20;
             }
+        }
+
+        private void RunStatsHandler(RunBlock run)
+        {
+            run.enemyStats = new Enemy.EnemyStats();
+            run.enemyStats.Health += _bossesCount * 50f;
         }
 
         private GameObject RunHandler()
@@ -45,6 +55,7 @@ namespace PolyRunner.Core
 
                 case 20:
                     _runCount = 1;
+                    _bossesCount++;
                     return _runBlockPrefabs[2];
 
                 default:

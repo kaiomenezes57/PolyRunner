@@ -1,3 +1,4 @@
+using Codice.CM.Common.Merge;
 using PolyRunner.Core;
 using PolyRunner.Player;
 using PolyRunner.Weapon;
@@ -52,18 +53,32 @@ namespace PolyRunner.HUD
             IEnumerator Animation()
             {
                 double current = double.Parse(_coinAmount.text);
+                float multiplier = GetMultiplierByDifference(coinAmount, current);
                 _coinAmount.fontSize += 1f;
 
                 while (current < coinAmount)
                 {
-                    current += Time.deltaTime;
-                    _coinAmount.text = $"{current:F2}";
+                    current += Time.deltaTime * multiplier;
+                    _coinAmount.text = $"<color=green>{current:F2}</color>";
                     yield return null;
                 }
 
                 _coinAmount.fontSize -= 1f;
                 _coinAmount.text = $"{coinAmount:F2}";
             }
+        }
+
+        private float GetMultiplierByDifference(double coinAmount, double current)
+        {
+            float multiplier = 1f;
+
+            if (coinAmount - current >= 1)
+            {
+                float difference = (float)(coinAmount - current);
+                multiplier = difference;
+            }
+
+            return multiplier;
         }
 
         public void SetCurrentWeapon(WeaponData weaponData)
