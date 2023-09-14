@@ -45,6 +45,7 @@ namespace PolyRunner.Enemy
         public void DeathHandler()
         {
             if (_enemyStats.Health > 0) { return; }
+            CoinManager.Instance.AddCoin(_enemyStats.DropCoinAmount);
             Destroy(gameObject);
         }
     }
@@ -54,11 +55,13 @@ namespace PolyRunner.Enemy
     {
         public string Name;
         public float Health;
+        public double DropCoinAmount;
 
-        public EnemyStats(string name, float health)
+        public EnemyStats(string name, float health, double dropCoinAmount)
         {
             Name = name;
             Health = health;
+            DropCoinAmount = dropCoinAmount;
         }
     }
 }

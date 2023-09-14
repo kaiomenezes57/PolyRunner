@@ -100,6 +100,7 @@ MonoBehaviour:
   _enemyStats:
     Name: 
     Health: 20
+    DropCoinAmount: 0.1
 --- !u!1001 &9117615143116782674
 PrefabInstance:
   m_ObjectHideFlags: 0

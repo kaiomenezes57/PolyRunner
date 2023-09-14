@@ -1,5 +1,7 @@
+using PolyRunner.Core;
 using PolyRunner.Player;
 using PolyRunner.Weapon;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -10,20 +12,27 @@ namespace PolyRunner.HUD
         [SerializeField] private TextMeshProUGUI _healthText;
         [SerializeField] private TextMeshProUGUI _weaponDamageText;
         [SerializeField] private TextMeshProUGUI _attackSpeedText;
-        
+
+        [Space]
         [SerializeField] private TextMeshProUGUI _attackRangeText;
         [SerializeField] private TextMeshProUGUI _lifeStealText;
         [SerializeField] private TextMeshProUGUI _cooldownText;
 
+        [Space]
         [SerializeField] private WeaponLabel _currentWeapon;
+
+        [Space]
+        [SerializeField] private TextMeshProUGUI _coinAmount;
 
         private void Start()
         {
+            PlayerStats.Instance.OnPlayerStatsChanged += SetInformation;
+            CoinManager.Instance.OnCoinUpdate += UpdateCoinAmount;
+
             PlayerStatsData playerStatsData = PlayerStats.Instance.PlayerStatsData;
             SetInformation(playerStatsData);
 
             _currentWeapon.gameObject.SetActive(false);
-            PlayerStats.Instance.OnPlayerStatsChanged += SetInformation;
         }
 
         private void SetInformation(PlayerStatsData playerStatsData)
@@ -37,6 +46,26 @@ namespace PolyRunner.HUD
             _cooldownText.text = $"{playerStatsData.CooldownReducer:F0}% cooldown";
         }
 
+        private void UpdateCoinAmount(double coinAmount)
+        {
+            StartCoroutine(Animation());
+            IEnumerator Animation()
+            {
+                double current = double.Parse(_coinAmount.text);
+                _coinAmount.fontSize += 1f;
+
+                while (current < coinAmount)
+                {
+                    current += Time.deltaTime;
+                    _coinAmount.text = $"{current:F2}";
+                    yield return null;
+                }
+
+                _coinAmount.fontSize -= 1f;
+                _coinAmount.text = $"{coinAmount:F2}";
+            }
+        }
+
         public void SetCurrentWeapon(WeaponData weaponData)
         {
             _currentWeapon.Setup(weaponData);
@@ -46,6 +75,7 @@ namespace PolyRunner.HUD
         private void OnDestroy()
         {
             PlayerStats.Instance.OnPlayerStatsChanged -= SetInformation;
+            CoinManager.Instance.OnCoinUpdate -= UpdateCoinAmount;
         }
     }
 }
