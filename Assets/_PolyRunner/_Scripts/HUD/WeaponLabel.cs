@@ -25,6 +25,7 @@ namespace PolyRunner.HUD
                 {
                     PlayerStatsData weaponStats = _weaponData.weaponStats;
                     PlayerStats.Instance.SumToPlayerStatsData(weaponStats);
+                    FindObjectOfType<StatsLabel>().SetCurrentWeapon(_weaponData);
 
                     WeaponSelector.Instance.SetActive(false);
                 }

@@ -17,11 +17,10 @@ MonoBehaviour:
 
     +0.5 life steal'
   rarity: 100
-  WeaponImage: {fileID: 0}
+  WeaponImage: {fileID: 21300000, guid: f2c18410e69176243b38f9b4a4b5ab24, type: 3}
   projectileColor: {r: 1, g: 0.19339621, b: 0.19339621, a: 0}
   weaponStats:
     Health: 0
-    Armor: 0
     WeaponDamage: 2
     AttackSpeed: 0
     AttackRange: 0

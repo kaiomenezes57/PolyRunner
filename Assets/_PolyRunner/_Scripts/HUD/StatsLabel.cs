@@ -1,4 +1,5 @@
 using PolyRunner.Player;
+using PolyRunner.Weapon;
 using TMPro;
 using UnityEngine;
 
@@ -14,11 +15,14 @@ namespace PolyRunner.HUD
         [SerializeField] private TextMeshProUGUI _lifeStealText;
         [SerializeField] private TextMeshProUGUI _cooldownText;
 
+        [SerializeField] private WeaponLabel _currentWeapon;
+
         private void Start()
         {
             PlayerStatsData playerStatsData = PlayerStats.Instance.PlayerStatsData;
             SetInformation(playerStatsData);
 
+            _currentWeapon.gameObject.SetActive(false);
             PlayerStats.Instance.OnPlayerStatsChanged += SetInformation;
         }
 
@@ -31,6 +35,12 @@ namespace PolyRunner.HUD
             _attackRangeText.text = $"{playerStatsData.AttackRange:F0} range";
             _lifeStealText.text = $"{playerStatsData.LifeSteal:F2}% life steal";
             _cooldownText.text = $"{playerStatsData.CooldownReducer:F0}% cooldown";
+        }
+
+        public void SetCurrentWeapon(WeaponData weaponData)
+        {
+            _currentWeapon.Setup(weaponData);
+            _currentWeapon.gameObject.SetActive(true);
         }
 
         private void OnDestroy()
