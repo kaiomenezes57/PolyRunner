@@ -62,6 +62,7 @@ namespace PolyRunner.Enemy
 
         private void DropItem()
         {
+            if (Vector3.Distance(transform.position, _playerController.transform.position) < 2.70f) { return; }
             GameObject prefab = (GameObject)Resources.Load("PowerUpBoxDrop");
             GameObject powerUp = Instantiate(prefab, transform.parent.transform);
 

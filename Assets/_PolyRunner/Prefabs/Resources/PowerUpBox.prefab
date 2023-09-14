@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _powerUpDataList:
+  - {fileID: 11400000, guid: 95919e9bc3dbe7d40a3959a786508161, type: 2}
   - {fileID: 11400000, guid: 57e165441c05d19409835e8d0d655fd3, type: 2}
   - {fileID: 11400000, guid: b7bf35e7838c5e6479d70587e8f0f149, type: 2}
   - {fileID: 11400000, guid: f614f243f80e22946936f95d5defd71e, type: 2}

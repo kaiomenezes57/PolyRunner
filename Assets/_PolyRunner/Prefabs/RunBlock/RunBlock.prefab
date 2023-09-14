@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 2632480327929598385}
   - component: {fileID: 3787303064294296122}
   - component: {fileID: 4602413159463800941}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: WeaponSelectorTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909855810916966699}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.64}
+  m_LocalPosition: {x: 0, y: 0.65, z: 3.64}
   m_LocalScale: {x: 12.1075, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -134,7 +134,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909855810916966699}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

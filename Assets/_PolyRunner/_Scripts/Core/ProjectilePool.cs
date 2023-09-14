@@ -44,7 +44,7 @@ namespace PolyRunner.Core
 
         public void SetProjectilesColor(Color color)
         {
-            _projectiles.ForEach(p => p.GetComponent<Renderer>().material.color = color);
+            _projectiles.ForEach(p => p.GetComponent<MeshRenderer>().materials[0].color = color);
         }
 
         private void OnDestroy()
