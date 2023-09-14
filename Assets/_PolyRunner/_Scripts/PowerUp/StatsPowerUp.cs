@@ -12,7 +12,6 @@ namespace PolyRunner.PowerUp
         {
             PlayerStats.Instance.SumToPlayerStatsData(_playerStatsData);
             FMODUnity.RuntimeManager.PlayOneShot("event:/PowerUp");
-
         }
     }
 }

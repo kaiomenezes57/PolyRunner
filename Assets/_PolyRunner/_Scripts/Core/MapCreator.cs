@@ -1,3 +1,4 @@
+using PolyRunner.Trigger;
 using UnityEngine;
 
 namespace PolyRunner.Core
@@ -8,6 +9,7 @@ namespace PolyRunner.Core
         [SerializeField] private Transform _parentTransform;
 
         [Space, SerializeField] private int _amount;
+        private bool _isWeaponSelectorGenerated = true;
         private int _runCount = 1;
 
         private void Start()
@@ -23,7 +25,10 @@ namespace PolyRunner.Core
             {
                 GameObject prefab = RunHandler();
                 GameObject runBlock = Instantiate(prefab);
-                
+            
+                runBlock.GetComponentInChildren<WeaponSelectorTrigger>(true).gameObject.SetActive(_isWeaponSelectorGenerated);
+                _isWeaponSelectorGenerated = false;
+
                 runBlock.transform.position = new(0f, 0f, z);
                 runBlock.transform.SetParent(_parentTransform);
 

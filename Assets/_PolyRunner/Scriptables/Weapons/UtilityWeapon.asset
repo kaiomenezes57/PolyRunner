@@ -10,6 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae48c372648b4dd41b774e0653ae891c, type: 3}
-  m_Name: EnergyGun
+  m_Name: UtilityWeapon
   m_EditorClassIdentifier: 
-  damage: 3
+  title: Utility Weapon
+  description: '+80 health
+
+    +15 cooldown reducer'
+  rarity: 100
+  WeaponImage: {fileID: 0}
+  projectileColor: {r: 0.6000549, g: 1, b: 0.19215685, a: 0}
+  weaponStats:
+    Health: 80
+    Armor: 0
+    WeaponDamage: 0
+    AttackSpeed: 0
+    AttackRange: 0
+    LifeSteal: 0
+    CooldownReducer: 15

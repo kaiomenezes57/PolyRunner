@@ -42,6 +42,11 @@ namespace PolyRunner.Core
             projectile.transform.localPosition = Vector3.zero;
         }
 
+        public void SetProjectilesColor(Color color)
+        {
+            _projectiles.ForEach(p => p.GetComponent<Renderer>().material.color = color);
+        }
+
         private void OnDestroy()
         {
             _projectiles?.Clear();

@@ -9,8 +9,6 @@ namespace PolyRunner.Weapon
     [RequireComponent(typeof(Rigidbody))]
     public class Projectile : MonoBehaviour
     {
-        public WeaponData weaponData;
-
         private void Start()
         {
             Rigidbody rigidbody = GetComponent<Rigidbody>();

@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638300614161264571
+  lastModified: 638301981159627470
   FileSizes:
   - Name: Desktop
-    Value: 1124
+    Value: 1274
   Exists: 1
 --- !u!114 &-4159234806649831200
 MonoBehaviour:
@@ -116,10 +116,10 @@ MonoBehaviour:
   Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/PowerUp.bank
   Name: PowerUp
   StudioPath: bank:/PowerUp
-  lastModified: 638300614187409131
+  lastModified: 638301981160937704
   FileSizes:
   - Name: Desktop
-    Value: 11968
+    Value: 22592
   Exists: 1
 --- !u!114 &-3524921112356252749
 MonoBehaviour:
@@ -148,6 +148,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 234776
+--- !u!114 &-3267214063723475587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WeaponChoose
+  m_EditorClassIdentifier: 
+  Path: event:/WeaponChoose
+  Guid:
+    Data1: 959708094
+    Data2: 1094167272
+    Data3: 612429961
+    Data4: -88381546
+  Banks:
+  - {fileID: -3897966599719423681}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1170
 --- !u!114 &-2858951681306606162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +190,7 @@ MonoBehaviour:
   Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638300614187224096
+  lastModified: 638301981160502621
   FileSizes:
   - Name: Desktop
     Value: 15430496
@@ -220,12 +247,15 @@ MonoBehaviour:
   - {fileID: 4011093438348934354}
   - {fileID: -3524921112356252749}
   - {fileID: -885575679672527330}
+  - {fileID: 1704170648548774180}
+  - {fileID: 2884274437773501432}
+  - {fileID: -3267214063723475587}
   EditorParameters: []
   MasterBanks:
   - {fileID: 130945267073126681}
   StringsBanks:
   - {fileID: -5783309000452814481}
-  cacheTime: 638300614187409131
+  cacheTime: 638301981160937704
   cacheVersion: 131605
 --- !u!114 &130945267073126681
 MonoBehaviour:
@@ -242,7 +272,7 @@ MonoBehaviour:
   Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638300614161244571
+  lastModified: 638301981159612470
   FileSizes:
   - Name: Desktop
     Value: 1194
@@ -274,6 +304,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 185000
+--- !u!114 &1704170648548774180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/EnemyApplyDamage
+  m_EditorClassIdentifier: 
+  Path: event:/EnemyApplyDamage
+  Guid:
+    Data1: 1971382493
+    Data2: 1218559675
+    Data3: 242744721
+    Data4: 1681962284
+  Banks:
+  - {fileID: -3897966599719423681}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 65
+--- !u!114 &2884274437773501432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerApplyDamage
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerApplyDamage
+  Guid:
+    Data1: 444789988
+    Data2: 1207832404
+    Data3: 1835608464
+    Data4: 101959954
+  Banks:
+  - {fileID: -3897966599719423681}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 375
 --- !u!114 &4011093438348934354
 MonoBehaviour:
   m_ObjectHideFlags: 0

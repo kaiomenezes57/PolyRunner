@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 9fac2279869bb4446af593dc1c479d1e, type: 3}
+  - {fileID: 2100000, guid: e7bd4b36d6d817140b533ca5f2c80dcf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -149,11 +149,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _powerUpDataList:
   - {fileID: 11400000, guid: 57e165441c05d19409835e8d0d655fd3, type: 2}
+  - {fileID: 11400000, guid: b7bf35e7838c5e6479d70587e8f0f149, type: 2}
+  - {fileID: 11400000, guid: f614f243f80e22946936f95d5defd71e, type: 2}
   - {fileID: 11400000, guid: 46a1bacde1f1d7540b6ab5c13b018242, type: 2}
   - {fileID: 11400000, guid: 1ac39dc67d2a21145a162a4dd0df03c0, type: 2}
+  - {fileID: 11400000, guid: b040560ba5394ae4c8c867be21923a63, type: 2}
   - {fileID: 11400000, guid: 4e24c6b5fe08b8744a97fe76116bbbf4, type: 2}
   - {fileID: 11400000, guid: 20ac94a8360bb154190c1fef34ab9198, type: 2}
   - {fileID: 11400000, guid: d39261ebbb5838e408f196abb840dea6, type: 2}
+  - {fileID: 11400000, guid: cda5c6435f2d6e3479872b0c019074fc, type: 2}
   _powerUpLabel: {fileID: 1304823115534669409}
 --- !u!1 &5962005754225151667
 GameObject:

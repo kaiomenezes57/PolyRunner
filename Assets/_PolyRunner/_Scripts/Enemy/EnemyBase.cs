@@ -1,11 +1,30 @@
+using UnityEngine;
 using PolyRunner.Core;
 using PolyRunner.Player;
+using PolyRunner.HUD;
 
 namespace PolyRunner.Enemy
 {
+    [RequireComponent(typeof(Rigidbody))]
     public class EnemyBase : CollisionInteraction, IDamageable
     {
-        protected EnemyStats _enemyStats;
+        [SerializeField] protected EnemyStats _enemyStats;
+        private DamageText _damageText;
+        protected PlayerController _playerController;
+
+        protected virtual void Start()
+        {
+            _damageText = gameObject.AddComponent<DamageText>();
+            _playerController = FindObjectOfType<PlayerController>();
+            
+            Rigidbody rigidbody = GetComponent<Rigidbody>();
+            rigidbody.constraints =
+                RigidbodyConstraints.FreezeRotationX |
+                RigidbodyConstraints.FreezeRotationY |
+                RigidbodyConstraints.FreezeRotationZ |
+                RigidbodyConstraints.FreezePositionX |
+                RigidbodyConstraints.FreezePositionZ;
+        }
 
         protected override void OnCollision()
         {
@@ -16,6 +35,10 @@ namespace PolyRunner.Enemy
         public void ApplyDamage(float damage)
         {
             _enemyStats.Health -= damage;
+
+            _damageText.Setup(damage, transform.position, Color.cyan);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyApplyDamage");
+
             DeathHandler();
         }
 

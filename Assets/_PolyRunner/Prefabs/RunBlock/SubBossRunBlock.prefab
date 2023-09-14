@@ -8,6 +8,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 234167314909948341, guid: f19b90aa019b7944d9a160cfa80f27f7,
+        type: 3}
+      propertyPath: _enemiesPrefab.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2448476507612146203, guid: f19b90aa019b7944d9a160cfa80f27f7,
         type: 3}
       propertyPath: m_RootOrder

@@ -1,9 +1,11 @@
 using PolyRunner.Core;
+using PolyRunner.HUD;
 using System;
 using UnityEngine;
 
 namespace PolyRunner.Player
 {
+    [RequireComponent(typeof(DamageText))]
     public class PlayerStats : Singleton<PlayerStats>, IDamageable
     {
         public PlayerStatsData PlayerStatsData { get { return _playerStatsData; } }
@@ -15,7 +17,6 @@ namespace PolyRunner.Player
         {
             _playerStatsData = new PlayerStatsData(
                 health: 100,
-                armor: 5,
                 weaponDamage: 5,
                 attackSpeed: 0.2f,
                 attackRange: 10,
@@ -26,7 +27,6 @@ namespace PolyRunner.Player
         public void SumToPlayerStatsData(PlayerStatsData playerStatsData)
         {
             _playerStatsData.Health += playerStatsData.Health;
-            _playerStatsData.Armor += playerStatsData.Armor;
 
             _playerStatsData.WeaponDamage += playerStatsData.WeaponDamage;
             _playerStatsData.AttackSpeed += playerStatsData.AttackSpeed;
@@ -42,6 +42,8 @@ namespace PolyRunner.Player
             _playerStatsData.Health -= damage;
             DeathHandler();
 
+            GetComponent<DamageText>().Setup(damage, transform.position, Color.red);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/PlayerApplyDamage");
             OnPlayerStatsChanged?.Invoke(_playerStatsData);
         }
 
@@ -64,19 +66,19 @@ namespace PolyRunner.Player
     public struct PlayerStatsData
     {
         public float Health;
-        public float Armor;
-        
+
+        [Space]
         public float WeaponDamage;
-        [Range(0f, 0.8f)] public float AttackSpeed;
+        public float AttackSpeed;
         public float AttackRange;
         public float LifeSteal;
-        
+
+        [Space]
         public float CooldownReducer;
 
-        public PlayerStatsData(float health, float armor, float weaponDamage, float attackSpeed, float attackRange, float lifeSteal, float cooldownReducer)
+        public PlayerStatsData(float health, float weaponDamage, float attackSpeed, float attackRange, float lifeSteal, float cooldownReducer)
         {
             Health = health;
-            Armor = armor;
             WeaponDamage = weaponDamage;
             AttackSpeed = attackSpeed;
             AttackRange = attackRange;
