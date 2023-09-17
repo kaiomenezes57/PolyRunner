@@ -43,7 +43,7 @@ namespace PolyRunner.Core
 
         public bool Contains(Item currentItem)
         {
-            return _itemList.Contains(currentItem);
+            return _itemList.Find(item => item.itemName == currentItem.itemName);
         }
 
         private void SaveCurrentIventory()

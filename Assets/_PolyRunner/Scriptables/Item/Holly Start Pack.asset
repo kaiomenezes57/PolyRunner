@@ -15,5 +15,6 @@ MonoBehaviour:
   itemName: Holly Start Pack
   itemDescription: Start the run with some temporary upgrades.
   itemImage: {fileID: 21300000, guid: c4c5f78e20973ff449c61049dc9ac529, type: 3}
-  itemPrice: 20
+  itemPrice: 0.7
   itemAction: {fileID: 11400000, guid: fc576c6c490293946bb38ececf3299a2, type: 2}
+  itemId: 0

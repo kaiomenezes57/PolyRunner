@@ -1,10 +1,7 @@
 using PolyRunner.Core;
 using PolyRunner.Items;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace PolyRunner.Menu
 {
@@ -14,7 +11,7 @@ namespace PolyRunner.Menu
         [SerializeField] private Transform _contentTransform;
 
         [SerializeField] private List<Item> _itemList = new();
-        private List<ShopItem> _spawnedShopItemList = new();
+        private readonly List<ShopItem> _spawnedShopItemList = new();
 
         private void Start()
         {
@@ -24,7 +21,7 @@ namespace PolyRunner.Menu
 
         public void Buy(Item item)
         {
-            if (CoinManager.Instance.CoinAmount < item.itemPrice) { return; }
+            if (CoinManager.Instance.CoinAmount < item.itemPrice) { WarningScreen.Instance.ShowWarningScreen("Error", "You don't have coins for it"); return; }
             
             if (InventoryManager.Instance.AddItemToInventory(item))
             {
@@ -49,43 +46,6 @@ namespace PolyRunner.Menu
             
             _spawnedShopItemList.ForEach(i => Destroy(i));
             _spawnedShopItemList?.Clear();
-        }
-    }
-
-    public class ShopItem : MonoBehaviour
-    {
-        [SerializeField] private TextMeshProUGUI _itemName;
-        [SerializeField] private TextMeshProUGUI _itemDescription;
-        [SerializeField] private Image _itemImage;
-        
-        [Space, SerializeField] private Button _buyButton;
-        private Item _currentItem;
-
-        private async void Start()
-        {
-            while (_currentItem == null) { await Task.Delay(10); }
-            
-            if (InventoryManager.Instance.Contains(_currentItem))
-            {
-                _buyButton.interactable = true;
-                _buyButton.onClick.AddListener(() => {
-                    if (_currentItem == null) { return; }
-                    Shop.Instance.Buy(_currentItem);
-                });
-
-                return;
-            }
-
-            _buyButton.interactable = false;
-        }
-
-        public void Setup(Item item)
-        {
-            _itemName.text = item.name;
-            _itemDescription.text = item.itemDescription;
-            _itemImage.sprite = item.itemImage;
-
-            _currentItem = item;
         }
     }
 }

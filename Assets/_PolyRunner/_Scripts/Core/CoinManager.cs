@@ -36,6 +36,8 @@ namespace PolyRunner.Core
             _coinAmount -= amount;
             if (_coinAmount <= 0) { _coinAmount = 0; }
             OnCoinUpdate?.Invoke(_coinAmount);
+            
+            FMODUnity.RuntimeManager.PlayOneShot("event:/CoinEarn");
             SaveCurrentCoinAmount();
         }
 
