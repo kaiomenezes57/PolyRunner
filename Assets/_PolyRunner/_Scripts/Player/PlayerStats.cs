@@ -37,6 +37,19 @@ namespace PolyRunner.Player
             OnPlayerStatsChanged?.Invoke(_playerStatsData);
         }
 
+        public void SubtractPlayerStatsData(PlayerStatsData playerStatsData)
+        {
+            _playerStatsData.Health -= playerStatsData.Health;
+
+            _playerStatsData.WeaponDamage -= playerStatsData.WeaponDamage;
+            _playerStatsData.AttackSpeed -= playerStatsData.AttackSpeed;
+            _playerStatsData.AttackRange -= playerStatsData.AttackRange;
+            _playerStatsData.LifeSteal -= playerStatsData.LifeSteal;
+
+            _playerStatsData.CooldownReducer -= playerStatsData.CooldownReducer;
+            OnPlayerStatsChanged?.Invoke(_playerStatsData);
+        }
+
         public void ApplyDamage(float damage)
         {
             _playerStatsData.Health -= damage;
