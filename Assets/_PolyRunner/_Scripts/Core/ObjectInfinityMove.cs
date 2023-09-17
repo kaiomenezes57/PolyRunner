@@ -8,9 +8,9 @@ namespace PolyRunner.Core
         private readonly float _speed = 3;
         private readonly float _maxZ = -15f;
 
-        private void Start()
+        private void OnEnable()
         {
-            StartMovement();
+            StartCoroutine(MoveRoutine());
         }
 
         private IEnumerator MoveRoutine()
@@ -23,16 +23,6 @@ namespace PolyRunner.Core
             }
 
             gameObject.SetActive(false);
-        }
-
-        public void StartMovement()
-        {
-            StartCoroutine(MoveRoutine());
-        }
-
-        public void StopMovement()
-        {
-            StopAllCoroutines();
         }
     }
 }

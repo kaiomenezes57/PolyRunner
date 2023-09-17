@@ -1,4 +1,3 @@
-using Codice.CM.Common.Merge;
 using PolyRunner.Core;
 using PolyRunner.Player;
 using PolyRunner.Weapon;
@@ -89,8 +88,8 @@ namespace PolyRunner.HUD
 
         private void OnDestroy()
         {
-            PlayerStats.Instance.OnPlayerStatsChanged -= SetInformation;
-            CoinManager.Instance.OnCoinUpdate -= UpdateCoinAmount;
+            if (PlayerStats.Instance != null) { PlayerStats.Instance.OnPlayerStatsChanged -= SetInformation; }
+            if (CoinManager.Instance != null) { CoinManager.Instance.OnCoinUpdate -= UpdateCoinAmount; }
         }
     }
 }

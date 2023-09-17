@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{63bba7d9-5eb6-4560-a657-03573cf07863}">
+		<property name="assetPath">
+			<value>AMEX - Krawk, Jotapê, Tchelo (Prod. Benito) (320 kbps).mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>285.024</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9b6a83df-f169-4bff-8116-cf8acafc1e26}</destination>
+		</relationship>
+	</object>
+</objects>

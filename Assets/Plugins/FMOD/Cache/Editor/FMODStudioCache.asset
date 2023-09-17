@@ -27,6 +27,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1002
+--- !u!114 &-7618020942125052019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Music/Krawk - Amek ft. Tchelo e Jotap\xEA"
+  m_EditorClassIdentifier: 
+  Path: "event:/Music/Krawk - Amek ft. Tchelo e Jotap\xEA"
+  Guid:
+    Data1: -1530444202
+    Data2: 1157039319
+    Data3: 1013775240
+    Data4: 1614188792
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256878
+--- !u!114 &-7228262416212310236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Derek - Scooby-Doo ft. Abbot
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Derek - Scooby-Doo ft. Abbot
+  Guid:
+    Data1: 654828908
+    Data2: 1132389158
+    Data3: -202513734
+    Data4: -1773257508
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 195000
+--- !u!114 &-6199481697323842182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Veigh - Jeito Bandido ft. Kyan
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Veigh - Jeito Bandido ft. Kyan
+  Guid:
+    Data1: -1208391172
+    Data2: 1222020067
+    Data3: -1263353727
+    Data4: 1803978463
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 136976
 --- !u!114 &-5783309000452814481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,11 +123,38 @@ MonoBehaviour:
   Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638302915776814865
+  lastModified: 638303082233002127
   FileSizes:
   - Name: Desktop
-    Value: 1312
+    Value: 1600
   Exists: 1
+--- !u!114 &-5370472706481419112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Aka Rasta - Levanta
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Aka Rasta - Levanta
+  Guid:
+    Data1: 151860991
+    Data2: 1258574642
+    Data3: -752018555
+    Data4: -1664821632
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 123952
 --- !u!114 &-4647481325478771087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,7 +182,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1865
---- !u!114 &-4159234806649831200
+--- !u!114 &-4415100653962442344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,14 +192,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/AmbientMusic02
+  m_Name: "event:/Music/Duzz - Atravessei S\xE3o Paulo"
   m_EditorClassIdentifier: 
-  Path: event:/Music/AmbientMusic02
+  Path: "event:/Music/Duzz - Atravessei S\xE3o Paulo"
   Guid:
-    Data1: 151860991
-    Data2: 1258574642
-    Data3: -752018555
-    Data4: -1664821632
+    Data1: -2101369756
+    Data2: 1108361708
+    Data3: -382321742
+    Data4: -1569626348
   Banks:
   - {fileID: -2858951681306606162}
   IsStream: 1
@@ -100,34 +208,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 123952
---- !u!114 &-4028810185976167686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/AmbientMusic01
-  m_EditorClassIdentifier: 
-  Path: event:/Music/AmbientMusic01
-  Guid:
-    Data1: 654828908
-    Data2: 1132389158
-    Data3: -202513734
-    Data4: -1773257508
-  Banks:
-  - {fileID: -2858951681306606162}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 195000
+  Length: 149389
 --- !u!114 &-3897966599719423681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,38 +224,11 @@ MonoBehaviour:
   Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/PowerUp.bank
   Name: PowerUp
   StudioPath: bank:/PowerUp
-  lastModified: 638302915780540508
+  lastModified: 638303082293137617
   FileSizes:
   - Name: Desktop
     Value: 38368
   Exists: 1
---- !u!114 &-3524921112356252749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/AmbientMusic05
-  m_EditorClassIdentifier: 
-  Path: event:/Music/AmbientMusic05
-  Guid:
-    Data1: 155345927
-    Data2: 1129643757
-    Data3: -1540713039
-    Data4: 1611587525
-  Banks:
-  - {fileID: -2858951681306606162}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 234776
 --- !u!114 &-3267214063723475587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,12 +271,12 @@ MonoBehaviour:
   Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638302915779240286
+  lastModified: 638303082292572519
   FileSizes:
   - Name: Desktop
-    Value: 15430496
+    Value: 22637824
   Exists: 1
---- !u!114 &-885575679672527330
+--- !u!114 &-1042426528997863951
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -232,14 +286,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/AmbientMusic06
+  m_Name: event:/Music/Je Santiago - Nintendo Switch
   m_EditorClassIdentifier: 
-  Path: event:/Music/AmbientMusic06
+  Path: event:/Music/Je Santiago - Nintendo Switch
   Guid:
-    Data1: -1923134881
-    Data2: 1213115505
-    Data3: 48464061
-    Data4: -1272386548
+    Data1: 155345927
+    Data2: 1129643757
+    Data3: -1540713039
+    Data4: 1611587525
   Banks:
   - {fileID: -2858951681306606162}
   IsStream: 1
@@ -248,7 +302,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 120466
+  Length: 234776
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,23 +321,25 @@ MonoBehaviour:
   - {fileID: -2858951681306606162}
   - {fileID: -3897966599719423681}
   EditorEvents:
-  - {fileID: -4028810185976167686}
   - {fileID: -7639338052609880876}
-  - {fileID: -4159234806649831200}
-  - {fileID: 285651794111284327}
-  - {fileID: 4011093438348934354}
-  - {fileID: -3524921112356252749}
-  - {fileID: -885575679672527330}
   - {fileID: 1704170648548774180}
   - {fileID: 2884274437773501432}
   - {fileID: -3267214063723475587}
   - {fileID: -4647481325478771087}
+  - {fileID: 5137838645007939512}
+  - {fileID: -1042426528997863951}
+  - {fileID: -4415100653962442344}
+  - {fileID: -7228262416212310236}
+  - {fileID: 5195549995602329745}
+  - {fileID: -6199481697323842182}
+  - {fileID: -5370472706481419112}
+  - {fileID: -7618020942125052019}
   EditorParameters: []
   MasterBanks:
   - {fileID: 130945267073126681}
   StringsBanks:
   - {fileID: -5783309000452814481}
-  cacheTime: 638302915780540508
+  cacheTime: 638303082293137617
   cacheVersion: 131605
 --- !u!114 &130945267073126681
 MonoBehaviour:
@@ -300,38 +356,11 @@ MonoBehaviour:
   Path: Assets/_PolyRunner/FMOD/PolyRunner/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638302915776794866
+  lastModified: 638303082232982132
   FileSizes:
   - Name: Desktop
     Value: 1194
   Exists: 1
---- !u!114 &285651794111284327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/AmbientMusic03
-  m_EditorClassIdentifier: 
-  Path: event:/Music/AmbientMusic03
-  Guid:
-    Data1: 1948031388
-    Data2: 1204600708
-    Data3: 1862172089
-    Data4: -2055675084
-  Banks:
-  - {fileID: -2858951681306606162}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 185000
 --- !u!114 &1704170648548774180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,7 +415,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 375
---- !u!114 &4011093438348934354
+--- !u!114 &5137838645007939512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,9 +425,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/AmbientMusic04
+  m_Name: event:/Music/Mano Felps - Libido ft. Caio Shock
   m_EditorClassIdentifier: 
-  Path: event:/Music/AmbientMusic04
+  Path: event:/Music/Mano Felps - Libido ft. Caio Shock
   Guid:
     Data1: -1947600126
     Data2: 1162728181
@@ -413,3 +442,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 140776
+--- !u!114 &5195549995602329745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Vk Mac - Praga da Vez
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Vk Mac - Praga da Vez
+  Guid:
+    Data1: 1948031388
+    Data2: 1204600708
+    Data3: 1862172089
+    Data4: -2055675084
+  Banks:
+  - {fileID: -2858951681306606162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 185000

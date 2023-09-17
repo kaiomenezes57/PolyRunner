@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b50741a837c494d902855794bcb522, type: 3}
+  m_Name: "Krawk - Amek ft. Tchelo e Jotap\xEA"
+  m_EditorClassIdentifier: 
+  musicName: "Krawk - Amek ft. Tchelo e Jotap\xEA"
+  musicPath:
+    Guid:
+      Data1: -1530444202
+      Data2: 1157039319
+      Data3: 1013775240
+      Data4: 1614188792
+    Path: "event:/Music/Krawk - Amek ft. Tchelo e Jotap\xEA"

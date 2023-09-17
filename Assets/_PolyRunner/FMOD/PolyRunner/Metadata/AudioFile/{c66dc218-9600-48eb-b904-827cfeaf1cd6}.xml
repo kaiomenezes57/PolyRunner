@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c66dc218-9600-48eb-b904-827cfeaf1cd6}">
+		<property name="assetPath">
+			<value>14. VEIGH - JEITO BANDIDO FT. KYAN (320 kbps).mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>146.976</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9b6a83df-f169-4bff-8116-cf8acafc1e26}</destination>
+		</relationship>
+	</object>
+</objects>

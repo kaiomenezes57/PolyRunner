@@ -16,10 +16,10 @@ namespace PolyRunner.Enemy
 
         protected override void SpawnEnemy()
         {
-            if (_spawnPoints.Count == 0 || _enemiesPrefab.Count == 0) { return; }
-
             for (int i = 0; i < Random.Range(1, 3); i++)
             {
+                if (_spawnPoints.Count == 0 || _enemiesPrefab.Count == 0) { break; }
+
                 int spawnPointRandomIndex = Random.Range(0, _spawnPoints.Count);
                 int enemyRandomIndex = Random.Range(0, _enemiesPrefab.Count);
 

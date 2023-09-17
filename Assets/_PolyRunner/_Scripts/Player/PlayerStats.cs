@@ -80,7 +80,7 @@ namespace PolyRunner.Player
         {
             Health = health;
             WeaponDamage = weaponDamage;
-            AttackSpeed = attackSpeed;
+            AttackSpeed = Mathf.Clamp(attackSpeed, 0f, DefaultValues.maxAttackSpeed);
             AttackRange = attackRange;
             LifeSteal = lifeSteal;
             CooldownReducer = cooldownReducer;

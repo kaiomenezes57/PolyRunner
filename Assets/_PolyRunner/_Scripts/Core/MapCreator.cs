@@ -28,7 +28,7 @@ namespace PolyRunner.Core
                 GameObject prefab = RunHandler();
                 GameObject runBlock = Instantiate(prefab);
             
-                runBlock.GetComponentInChildren<WeaponSelectorTrigger>(true).gameObject.SetActive(_isWeaponSelectorGenerated);
+                runBlock.GetComponentInChildren<WeaponSelectorTrigger>(true).GetComponent<BoxCollider>().enabled = _isWeaponSelectorGenerated;
                 _isWeaponSelectorGenerated = false;
 
                 RunStatsHandler(runBlock.GetComponent<RunBlock>());
