@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace PolyRunner.Item
+namespace PolyRunner.Items
 {
     [CreateAssetMenu(menuName = "Scriptables/Item Actions/Temporary Stats Item Action")]
     public class SetTemporaryStatsItemAction : ItemAction

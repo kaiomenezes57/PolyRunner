@@ -1,6 +1,7 @@
+using Codice.Client.Commands.WkTree;
 using UnityEngine;
 
-namespace PolyRunner.Item
+namespace PolyRunner.Items
 {
     [CreateAssetMenu(menuName = "Scriptables/Item")]
     public class Item : ScriptableObject
@@ -14,6 +15,7 @@ namespace PolyRunner.Item
 
         [Space]
         public ItemAction itemAction;
+        [HideInInspector] public int itemId;
 
         public void PerformItemAction()
         {

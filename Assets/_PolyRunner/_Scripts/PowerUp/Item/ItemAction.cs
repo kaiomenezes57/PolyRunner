@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PolyRunner.Item
+namespace PolyRunner.Items
 {
     public abstract class ItemAction : ScriptableObject
     {
