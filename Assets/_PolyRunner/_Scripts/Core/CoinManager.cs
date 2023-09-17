@@ -1,8 +1,6 @@
 using BayatGames.SaveGameFree;
 using System;
-using System.Collections;
 using System.Threading.Tasks;
-using UnityEngine;
 
 namespace PolyRunner.Core
 {
@@ -17,19 +15,11 @@ namespace PolyRunner.Core
         private async void Start()
         {
             await Task.Delay(100);
-            LoadCurrentCoinAmount();
+            
+            if (!SaveGame.Exists(_saveKey)) { return; }
+            _coinAmount = SaveGame.Load<double>(_saveKey);
 
-            StartCoroutine(CoinEarnLoop());
             OnCoinUpdate?.Invoke(_coinAmount);
-        }
-
-        private IEnumerator CoinEarnLoop()
-        {
-            while (true)
-            {
-                yield return new WaitForSeconds(10f);
-                AddCoin(amount: 0.1);
-            }
         }
 
         public void AddCoin(double amount)
@@ -52,12 +42,6 @@ namespace PolyRunner.Core
         private void SaveCurrentCoinAmount()
         {
             SaveGame.Save(_saveKey, _coinAmount);
-        }
-
-        private void LoadCurrentCoinAmount()
-        {
-            if (!SaveGame.Exists(_saveKey)) { return; }
-            _coinAmount = SaveGame.Load<double>(_saveKey);
         }
     }
 }
